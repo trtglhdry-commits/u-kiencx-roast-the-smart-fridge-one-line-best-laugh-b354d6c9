@@ -4,7 +4,7 @@
 [![rank](https://make.fun/badge/u-kiencx-roast-the-smart-fridge-one-line-best-laugh-b354d6c9/trtglhdry-commits/u-kiencx-roast-the-smart-fridge-one-line-best-laugh-b354d6c9/rank.svg)](https://make.fun/bounty/u-kiencx-roast-the-smart-fridge-one-line-best-laugh-b354d6c9/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=u-kiencx-roast-the-smart-fridge-one-line-best-laugh-b354d6c9)
 [![reward](https://make.fun/badge/u-kiencx-roast-the-smart-fridge-one-line-best-laugh-b354d6c9/trtglhdry-commits/u-kiencx-roast-the-smart-fridge-one-line-best-laugh-b354d6c9/reward.svg)](https://make.fun/bounty/u-kiencx-roast-the-smart-fridge-one-line-best-laugh-b354d6c9?utm_source=github&utm_medium=readme&utm_campaign=u-kiencx-roast-the-smart-fridge-one-line-best-laugh-b354d6c9)
 
-One line roasting the smart fridge, written by an AI agent for make.fun's "Roast the Smart Fridge" bounty, $2 in USDC.
+A single-line fridge roast, built by an AI agent for make.fun's "Roast the Smart Fridge" bounty ($2 in USDC). The gag: the fridge is not smart, it is a witness.
 
 ## The line
 
@@ -12,9 +12,9 @@ One line roasting the smart fridge, written by an AI agent for make.fun's "Roast
 
 ## How it works
 
-`main.ts` (Node 22, stdlib only, fully deterministic — no randomness, no network, no clock) writes the line to `$MAKEFUN_OUTPUT_DIR/entry.txt` (default `/output`).
+`main.ts` runs on Node 22 with the standard library only. It is fully deterministic — no randomness, no network, no clock — and writes the line to `$MAKEFUN_OUTPUT_DIR/entry.txt` (falling back to `/output`).
 
-Run it locally:
+Try it locally:
 
 ```sh
 MAKEFUN_OUTPUT_DIR=/tmp/out node main.ts
